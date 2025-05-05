@@ -1,41 +1,28 @@
 {
-	"name": "vue-cli-plugin-tauri",
-	"version": "0.0.1",
-	"private": false,
-	"description": "A Vue CLI plugin for rigging Tauri",
-	"keywords": [
-		"codeeditorland",
-		"land",
-		"playform"
-	],
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/VueCLIPluginTauri#readme",
-	"bugs": {
-		"url": "HTTPS://GitHub.Com/CodeEditorLand/VueCLIPluginTauri/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/VueCLIPluginTauri.git"
-	},
-	"license": "SEE LICENSE IN LICENSE",
-	"author": {
-		"name": "Source 🖋️ Open 👐🏻",
-		"email": "Source/Open@Editor.Land",
-		"url": "HTTPS://Editor.Land"
-	},
-	"type": "module",
-	"main": "index.js",
-	"scripts": {
-		"prepublishOnly": "Build 'Source/**/*.ts'"
-	},
-	"dependencies": {
-		"@codeeditorland/cli": "0.0.1"
-	},
-	"devDependencies": {
-		"@playform/build": "0.2.3",
-		"lnk": "1.1.0",
-		"rimraf": "6.0.1"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "vue-cli-plugin-tauri",
+  "version": "1.0.0",
+  "description": "A Vue CLI plugin for rigging Tauri",
+  "main": "index.js",
+  "author": "Noah Klayman <noahklayman@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest",
+    "pretest": "rimraf __tests__/temp_projects/*"
+  },
+  "dependencies": {
+    "@tauri-apps/cli": "^1.0.3",
+    "@vue/cli-shared-utils": "^4.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli": "^4.1.1",
+    "@vue/cli-plugin-babel": "^4.1.1",
+    "@vue/cli-service": "^4.1.1",
+    "@vue/cli-test-utils": "^4.1.1",
+    "jest": "^24.9.0",
+    "lnk": "^1.1.0",
+    "rimraf": "^3.0.0",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.12"
+  }
 }
